@@ -843,6 +843,36 @@ pbjs.setConfig({
 });
 {% endhighlight %}
 
+### NextRoll ID
+
+NextRoll is an industry-leading marketing technology and data stack that fuels growth for businesses of all kinds. Our technology powers two multi-million dollar high-growth businesses: AdRoll and RollWorks. The NextRoll ID helps publishers access unique demand in cookieless environments.
+
+#### NextRoll ID Configuration
+
+Add it to your Prebid.js package with:
+
+{: .alert.alert-info :}
+gulp build --modules=nextrollIdSystem
+
+Enable the module in configuration, with your sellerId:
+
+{% highlight javascript %}
+pbjs.setConfig({
+    userSync: {
+        userIds: [{
+            name: "nextroll",
+            storage: {
+                type: 'html5',
+                name: '_nextroll_id',
+                expires: 1
+            },
+            params: {
+                partnerId: 'YOUR_PARTNER_ID'
+            }
+        }]
+    }
+});
+{% endhighlight %}
 
 ### Parrable ID
 
