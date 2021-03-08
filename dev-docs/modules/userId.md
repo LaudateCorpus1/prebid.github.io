@@ -864,7 +864,7 @@ Add it to your Prebid.js package with:
 {: .alert.alert-info :}
 gulp build --modules=nextrollIdSystem
 
-Enable the module in configuration, with your sellerId:
+Enable the module in configuration, with your partnerId:
 
 {% highlight javascript %}
 pbjs.setConfig({
